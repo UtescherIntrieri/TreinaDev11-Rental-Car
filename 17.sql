@@ -1,0 +1,9 @@
+-- SQLite
+
+-- 17 - Construa uma consulta capaz de exibir todos os funcionários e seus respectivos cargos
+SELECT EMPLOYEES.ID,
+      EMPLOYEES.NAME,
+      EMPLOYEES.PHONE_NUMBER,
+      EMPLOYEES.CONTRACT_DATE,
+      POSITIONS.DESCRIPTION AS 'POSITION' FROM EMPLOYEES
+  JOIN POSITIONS ON (EMPLOYEES.POSITION_ID = POSITIONS.ID);
